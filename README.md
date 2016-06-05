@@ -258,6 +258,36 @@ git mergetool
 Для работы с удаленными репозиториями нужен GIT хостинг. 2 самых популярных :
 
 	1. Github (https://github.com/)
-	 2. Bitbucket (bitbucket.org)
+	2. Bitbucket (bitbucket.org)
 
 Главное отличие между ними - github.com предоставляет открытый хостинг бесплатно, а для закрытых проектов платные тарифы. В отличии от github , bitbucket предоставляет бесплатно закрытый хостинг.
+
+### Origin
+
+Как только создали новый проект следует созадать [README.md](#Файл-readmemd), написать [git-init](#git-init), закомитить проект [git commit](#Фиксация-изменений), и отправить на удаленный гин хостинг.
+
+В консоль прописываем так:
+
+	- ` echo "# test" >> README.md.`
+	- `git init`
+	- `git add README.md`
+	- `git commit -m "first commit"`
+	- `git remote add origin https://github.com/MrVladevoit/test.git`
+	- `git push -u origin master`
+
+Если уже имеется проект на локальной машине :
+	- `git remote add origin https://github.com/MrVladevoit/test.git`
+	- `git push -u origin master`
+
+### Получение и отправка файлов на удаленный гит репозиторий
+
+- `$ git remote` - все удаленные репозитории.
+
+- `$ git fetch <remote>` - получаем все файлы, что есть на удаленном репозитории.
+
+- `$ git pull` - получает все файлы с удаленного репозитория и производит сразу слеяние ([Merge](#merge---слияние-веток)).
+
+- `$ git push` - отправить файлы на удаленный гит репозиторий.
+
+- `$ git push origin <branch>` - заставляет сделать коммит слияния.
+

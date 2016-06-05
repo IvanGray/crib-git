@@ -250,3 +250,14 @@ git mergetool
 
 
 ## Работа с удаленными репозиториями
+
+### GIT хостинг
+
+![alt tag](https://semaphoreci.com/docs/assets/img/adding-new-project/select-github-or-bitbucket.png)
+
+Для работы с удаленными репозиториями нужен GIT хостинг. 2 самых популярных :
+
+	1. Github (https://github.com/)
+	 2. Bitbucket (bitbucket.org)
+
+Главное отличие между ними - github.com предоставляет открытый хостинг бесплатно, а для закрытых проектов платные тарифы. В отличии от github , bitbucket предоставляет бесплатно закрытый хостинг.

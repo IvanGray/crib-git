@@ -10,7 +10,10 @@
 
 ### Configuration
 
-Добавить алиасы в ~/.gitconfig file:
+####Общие алиасы
+
+git status, git add, git commit, git checkout — общие команды, для которых полезно иметь сокращения.
+Для пользователей Windows.Добавить алиасы следует в ~/.gitconfig file:
 
 	[alias]
 		st = status
